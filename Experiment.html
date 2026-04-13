@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhateverWorks Bikes</title>
+  <style>
+    :root {
+      --bar-bg: #1f3a3d;
+      --bar-text: #f4f1ea;
+      --page-bg: #fcfbf7;
+      --body-text: #222;
+      --link: #f4f1ea;
+      --link-hover: #ffd166;
+      --content-max: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--page-bg);
+      color: var(--body-text);
+      line-height: 1.5;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--bar-bg);
+      color: var(--bar-text);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .bar-inner {
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.2rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    nav a,
+    footer a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    footer a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    footer {
+      background: var(--bar-bg);
+      color: var(--bar-text);
+      margin-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .footer-inner {
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .shrug {
+      font-size: 1.1rem;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar-inner">
+      <div class="brand">WhateverWorks Bikes</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://instagram.com/youraccount" target="_blank">Instagram</a>
+        <a href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Page title</h1>
+    <p>Your page content goes here.</p>
+    <p>Add enough content here to test scrolling and the sticky header.</p>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>WhateverWorks Bikes</div>
+      <div class="shrug">¯\_(ツ)_/¯</div>
+    </div>
+  </footer>
+</body>
+</html>
